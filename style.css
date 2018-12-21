@@ -35,8 +35,17 @@ li > a {
 
 .portfolio-header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
+}
+
+.portfolio-header > div {
+  width: 140px;
+}
+
+.portfolio-header img {
+  width: 100%;
 }
 
 .portfolio-intro {
@@ -131,6 +140,17 @@ li > a {
 }
 
 @media screen and (max-width: 600px) {
+  .portfolio-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolio-header > div {
+    padding-bottom: 15px;
+    width: 100px;
+  }
+
   .portfolio-intro p {
     font-size: 20px;
     padding: 0;
