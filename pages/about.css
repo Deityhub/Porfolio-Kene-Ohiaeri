@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "AktivGrotesk-light";
+  src: url("../assets/font/TTF/AktivGrotesk-Light.ttf");
+}
+
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: AktivGrotesk-light;
+  background-color: #fcfcff;
+}
+
+ul > li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+li > a {
+  text-decoration: none;
+  color: #bdbdbd;
+  font-weight: 700;
+}
+
+li .active {
+  color: black;
+}
+
+.portfolio-container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.portfolio-intro {
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.portfolio-intro p {
+  font-size: 30px;
+  padding: 5px;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+footer img {
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 870px) {
+  .portfolio-intro {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .portfolio-intro p {
+    font-size: 20px;
+  }
+
+  footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-intro p {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .portfolio-intro {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}

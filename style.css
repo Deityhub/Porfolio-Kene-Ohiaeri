@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "AktivGrotesk-light";
+  src: url("./assets/font/TTF/AktivGrotesk-Light.ttf");
+}
+
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: AktivGrotesk-light;
+  background-color: #fcfcff;
+}
+
+ul > li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+li > a {
+  text-decoration: none;
+  color: #bdbdbd;
+  font-weight: 700;
+}
+
+.portfolio-container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.portfolio-intro {
+  width: 100%;
+  margin-top: 180px;
+  margin-bottom: 200px;
+}
+
+.portfolio-intro p {
+  font-size: 34px;
+  padding: 5px;
+}
+
+.chota-gif {
+  width: 75%;
+  height: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.chota-gif:hover .chota-blur,
+.logo:hover .logo-blur,
+.sport:hover .sport-blur {
+  animation: inToOut 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.chota-blur,
+.logo-blur,
+.sport-blur {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 2;
+}
+
+.image-gif {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-sport {
+  display: flex;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.logo-sport div {
+  width: 50%;
+  height: 50vh;
+  position: relative;
+}
+
+.logo-gif {
+  width: 100%;
+}
+
+.sport-png {
+  width: 100%;
+}
+
+@keyframes inToOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .portfolio-intro {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .portfolio-intro p {
+    font-size: 30px;
+  }
+
+  .chota-gif {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-intro p {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .portfolio-intro {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .chota-gif {
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo-sport {
+    display: block;
+    width: 100%;
+  }
+
+  .logo-sport > div {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
