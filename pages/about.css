@@ -87,6 +87,10 @@ footer img {
     align-items: center;
     justify-content: space-evenly;
   }
+
+  footer img {
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -106,5 +110,9 @@ footer img {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  footer img {
+    padding-right: 0;
   }
 }
